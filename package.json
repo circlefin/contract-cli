@@ -36,8 +36,8 @@
     "test:cov": "yarn jest --coverage=true"
   },
   "files": [
-    "./bin",
-    "./dist",
+    "/bin",
+    "/dist",
     "Dockerfile"
   ],
   "dependencies": {
