@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "dependencies": {
+    "@openzeppelin/contracts": "4.1.0",
+    "solc": "0.8.3"
+  }
+}

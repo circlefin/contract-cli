@@ -1,0 +1,50 @@
+{
+  "name": "@circle-fin/contract-cli",
+  "description": "CLI for managing smart contracts",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "shx rm -rf dist && tsc -b&& shx cp -R ./src/resources ./dist/resources",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "test": "yarn jest",
+    "test:cov": "yarn jest --coverage=true"
+  },
+  "files": [
+    "./bin",
+    "./dist",
+    "Dockerfile"
+  ],
+  "dependencies": {
+    "@oclif/core": "^1.13.10",
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^18.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@4c/tsconfig": "^0.4.1",
+    "@oclif/test": "^2.1.1",
+    "@types/jest": "^28.1.6",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "chai": "^4.3.6",
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "jest": "^28.1.3",
+    "oclif": "^3.1.2",
+    "pinst": "^3.0.0",
+    "prettier": "^2.7.1",
+    "shx": "^0.3.4",
+    "ts-jest": "^28.0.7"
+  },
+  "oclif": {
+    "commands": "./dist/commands",
+    "bin": "contract-cli"
+  }
+}

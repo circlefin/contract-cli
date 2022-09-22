@@ -1,0 +1,10 @@
+{
+  "extends": "@4c/tsconfig/node.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "noImplicitAny": true,
+    "module": "CommonJS",
+    "isolatedModules": false,
+    "types": ["node", "jest"]
+  }
+}
