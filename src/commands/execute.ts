@@ -41,7 +41,7 @@ export default class Execute extends Command {
 
     // Mount the contractCliDir as a volume to make sure the same version is in use inside and outside the container
     // Also allows for easier local development since we don't need to install a module in the container
-    const contractCliDir = `${__dirname}/../../`;
+    const contractCliDir = `${__dirname}/../..`;
     const containerContractCliDir = "/usr/source/contractcli";
 
     // Mount the workingDir as a volume to access the configs, steps, source, and tests
@@ -67,6 +67,7 @@ export default class Execute extends Command {
     ]);
 
     this.log("Starting docker container for contract-cli.");
+
     const result = spawn("docker", [
       "run",
       "-e",
@@ -80,8 +81,6 @@ export default class Execute extends Command {
       "contractcli",
       "-v",
       `${workingDir}:${containerWorkingDir}`,
-      "-v",
-      `${contractCliDir}:${containerContractCliDir}`,
       "contractcli:latest",
       "node",
       `${containerContractCliDir}/dist/moduleRunner.js`,

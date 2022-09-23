@@ -1,7 +1,33 @@
 {
   "name": "@circle-fin/contract-cli",
+  "version": "1.0.2",
   "description": "CLI for managing smart contracts",
   "license": "Apache-2.0",
+  "bin": {
+    "contract-cli": "./bin/run"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/circlefin/contract-cli.git"
+  },
+  "keywords": [
+    "circle",
+    "smart-contracts",
+    "blockchain",
+    "smart-contracts-tools"
+  ],
+  "bugs": {
+    "url": "https://github.com/circlefin/contract-cli/issues"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "homepage": "https://github.com/circlefin/contract-cli#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "build": "shx rm -rf dist && tsc -b&& shx cp -R ./src/resources ./dist/resources",
     "lint": "eslint .",
@@ -10,8 +36,8 @@
     "test:cov": "yarn jest --coverage=true"
   },
   "files": [
-    "./bin",
-    "./dist",
+    "/bin",
+    "/dist",
     "Dockerfile"
   ],
   "dependencies": {
