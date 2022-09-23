@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/circlefin/contract-cli#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.com"
+    "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
     "build": "shx rm -rf dist && tsc -b&& shx cp -R ./src/resources ./dist/resources",

@@ -20,7 +20,7 @@ Earlier versions may work but have not been tested and are not considered offici
 ## Installation
 
 ```
-$ npm i -g contract-cli
+$ npm i -g @circle-fin/contract-cli
 ```
 
 Note: We use the `-g` flag for global installation here to enable operation from the command line.
