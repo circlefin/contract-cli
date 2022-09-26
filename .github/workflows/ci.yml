@@ -1,7 +1,6 @@
 name: Continuous Integration
 on:
   pull_request:
-  push:
 jobs:
   lint-and-test:
     name: "Lint and Test"
