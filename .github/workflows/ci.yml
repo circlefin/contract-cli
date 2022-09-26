@@ -3,6 +3,7 @@ on:
   pull_request:
 jobs:
   lint-and-test:
+    name: "Lint and Test"
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
