@@ -87,15 +87,15 @@ export default class Execute extends Command {
     ]);
 
     result.stdout.on("data", (data) => {
-      this.log(`contract-cli: ${data}`);
+      this.log(`contract-cli: ${data.toString().trim()}`);
     });
 
     result.stderr.on("data", (data) => {
-      this.logToStderr(`contract-cli: ${data}`);
+      this.logToStderr(`contract-cli: ${data.toString().trim()}`);
     });
 
     result.on("error", (error) => {
-      this.logToStderr(`contract-cli: ${error.message}`);
+      this.logToStderr(`contract-cli: ${error.message.toString().trim()}`);
     });
 
     result.on("close", () => {
