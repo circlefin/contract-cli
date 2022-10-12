@@ -18,9 +18,10 @@
 import { Step } from "./step";
 
 const KnownSteps = new Map<string, Step>([
+  ["echidna", new Step("echidna", "install.sh", "execute.sh", -1)],
   ["ganache", new Step("ganache", "install.sh", "execute.sh", 10)],
-  ["truffle", new Step("truffle", "install.sh", "execute.sh", -1)],
   ["solcjs", new Step("solcjs", "install.sh", "execute.sh", -1)],
+  ["truffle", new Step("truffle", "install.sh", "execute.sh", -1)],
   ["web3j", new Step("web3j", "install.sh", "execute.sh", -1)],
 ]);
 
