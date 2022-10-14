@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/circlefin/contract-cli/compare/v1.0.3...v1.1.0) (2022-10-14)
+
+
+### Features
+
+* add new default step for echidna fuzzing ([#12](https://github.com/circlefin/contract-cli/issues/12)) ([91368ea](https://github.com/circlefin/contract-cli/commit/91368ea7d71b9bcbaa79603798cdee7b6eec23f9))
+
+
+### Bug Fixes
+
+* Update Dependencies in Provided Steps ([#14](https://github.com/circlefin/contract-cli/issues/14)) ([23534e5](https://github.com/circlefin/contract-cli/commit/23534e5cea3794f1217139346f4a0d3e66f1500f))
+
 ## 1.0.3 (2022-09-26)
 
 
