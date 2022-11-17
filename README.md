@@ -109,6 +109,9 @@ the recommended extensions for the project.
 - The linter can be run manually with `yarn lint` and can auto-fix problems with `yarn lint:fix`.
 - The linter will be automatically run on `git push` commands. This can be bypassed with the `no-verify` flag.
 
+## Join the team
+If you’re energized by what we’re building at Circle, please consider joining our team by exploring [Careers @ Circle](http://circle.com/careers).
+
 ## License
 
 [Apache-2.0](./LICENSE)
