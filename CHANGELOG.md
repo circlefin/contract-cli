@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/circlefin/contract-cli/compare/v1.1.0...v1.1.1) (2023-01-09)
+
+
+### Bug Fixes
+
+* update apache license to include Circle ([#16](https://github.com/circlefin/contract-cli/issues/16)) ([c906608](https://github.com/circlefin/contract-cli/commit/c9066081c192387e920b957f5c6fd8125f93a77f))
+
 ## [1.1.0](https://github.com/circlefin/contract-cli/compare/v1.0.3...v1.1.0) (2022-10-14)
 
 
