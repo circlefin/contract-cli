@@ -23,3 +23,7 @@ jobs:
 
       - name: Run Unit Tests
         run: yarn test
+
+  scan:
+    needs: lint-and-test
+    uses: circlefin/circle-public-github-workflows/.github/workflows/pr-scan.yaml@v1
