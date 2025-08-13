@@ -7,7 +7,7 @@ on: [workflow_dispatch, workflow_call]
 
 jobs:
   publish-npm:
-    runs-on: ubuntu-latest
+    runs-on: large-spot
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
