@@ -5,20 +5,12 @@ on:
 name: release-please
 jobs:
   release-please:
-    runs-on: ubuntu-latest
+    runs-on: github-hosted-small
     outputs:
       did-create-release: ${{ steps.release.outputs.release_created }}
       release-tag: ${{ steps.release.outputs.tag_name }}
-    permissions:
-      id-token: write
 
     steps:
-      - name: Harden the runner
-        uses: step-security/harden-runner@95d9a5deda9de15063e7595e9719c11c38c90ae2 # v2.13.2
-        with:
-          egress-policy: block
-          policy: global-allowed-endpoints-policy
-
       - uses: google-github-actions/release-please-action@db8f2c60ee802b3748b512940dde88eabd7b7e01 # v3.7.13
         id: release
         with:
